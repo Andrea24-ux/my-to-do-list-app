@@ -1,0 +1,12 @@
+const fs = require('fs');
+
+// Path to the .json file
+const filePath = './launch.json';
+
+// Remove the file
+try {
+    fs.unlinkSync(filePath);
+    console.log(${filePath} has been removed.);
+} catch (err) {
+    console.error('Error removing file:', err);
+}
